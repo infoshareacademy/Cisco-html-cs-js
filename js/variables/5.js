@@ -1,0 +1,10 @@
+// let NaMe = 'Marek';
+// let N1Am2E = 'Marek';
+// let 1name = 'Marek';
+// let _name = 'Marek';
+// let $name = 'Marek';
+// let full name = 'Marek'
+// let return = 'Marek'
+// let for = 'Marek'
+// let break = 'Marek'
+// let if = 'Marek'

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <title>Porównanie var / let / const — tabelki</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      line-height: 1.4;
+      background: #f7f7fb;
+      color: #222;
+    }
+
+    h2 { margin-top: 28px; }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 28px;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    thead th {
+      background: #0b5cff;
+      color: #fff;
+      text-align: left;
+      padding: 12px 14px;
+      font-size: 15px;
+    }
+
+    tbody td {
+      padding: 10px 14px;
+      border-top: 1px solid #eee;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    tbody tr:nth-child(even) td { background: #fbfcff; }
+
+    .small { font-size: 13px; color: #555; }
+    code { background:#eef2ff; padding:2px 6px; border-radius:4px; font-family: monospace; }
+  </style>
+</head>
+<body>
+
+  <h1>Porównanie zakresów zmiennych</h1>
+
+  <h2>Tabelka 1: Zakresy i widoczność</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Słowo kluczowe</th>
+        <th>Zakres</th>
+        <th>Widoczna poza <code>{ }</code>?</th>
+        <th>Widoczna poza funkcją?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>var</strong></td>
+        <td>Zakres funkcyjny (function scope)</td>
+        <td>Tak</td>
+        <td>Nie (jeśli zadeklarowana wewnątrz funkcji)</td>
+      </tr>
+      <tr>
+        <td><strong>let</strong></td>
+        <td>Zakres blokowy (block scope)</td>
+        <td>Nie</td>
+        <td>Nie</td>
+      </tr>
+      <tr>
+        <td><strong>const</strong></td>
+        <td>Zakres blokowy (block scope)</td>
+        <td>Nie</td>
+        <td>Nie</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Tabelka 2: Podsumowanie typów zmiennych</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Typ</th>
+        <th>„Dom” zmiennej</th>
+        <th>Przykład</th>
+        <th>Widoczność</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>var</strong></td>
+        <td>Funkcja</td>
+        <td><code>var x = 5;</code></td>
+        <td>Widoczna w całej funkcji</td>
+      </tr>
+      <tr>
+        <td><strong>let</strong></td>
+        <td>Blok <code>{ }</code></td>
+        <td><code>let y = 5;</code></td>
+        <td>Widoczna tylko wewnątrz bloku, w którym została zadeklarowana</td>
+      </tr>
+      <tr>
+        <td><strong>const</strong></td>
+        <td>Blok <code>{ }</code></td>
+        <td><code>const z = 5;</code></td>
+        <td>Widoczna tylko wewnątrz bloku; wartość nie może być nadpisana</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="small">Uwaga: <em>var</em> ma zakres funkcyjny — oznacza to, że ignoruje zwykłe bloki <code>{ }</code> (np. w <code>if</code>, <code>for</code>), ale jest ograniczona do funkcji, jeśli zadeklarowana wewnątrz funkcji.</p>
+
+</body>
+</html>
