@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact us</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">My Dashboard</a>
+      <ul class="nav-list" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html">Dashboard</a></li>
+        <li role="none"><a role="menuitem" href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-main" role="main">
+    <section class="contact-section" aria-labelledby="dashboard-heading">
+      <h1>Contact Us</h1>
+
+      <form class="contact-form" aria-describedby="form-instructions">
+        <p id="form-instructions">
+          Fill out the form to contact us. Fields marked required must be completed.
+        </p>
+
+        <!-- Full name -->
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required aria-required="true" />
+        </div>
+
+        <!-- Email --> 
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required aria-required="true" />
+        </div>
+
+        <!-- Preferred contact method -->
+        <fieldset class="form-row">
+          <legend>Preferred contact method</legend>
+          <div>
+            <label><input type="radio" name="contactMethod" value="email" required aria-required="true" />Email</label>
+            <label><input type="radio" name="contactMethod" value="phone" required aria-required="true" />Phone</label>
+          </div>
+        </fieldset>
+
+        <!-- Services -->
+        <fieldset class="form-row">
+          <legend>Services you're interested in</legend>
+          <div>
+            <label><input type="checkbox" name="services" value="design" /> Design</label>
+            <label><input type="checkbox" name="services" value="development" /> Development</label>
+            <label><input type="checkbox" name="services" value="consulting" /> Consulting</label>
+          </div>
+        </fieldset>
+
+        <!-- Budget select -->
+        <div class="form-row">
+          <label for="budget">Estimated budget</label>
+          <select name="budget" required aria-required="true">
+            <option value="">-- Choose --</option>
+            <option value="low">Under $1000</option>
+            <option value="medium">$1000 - $5000</option>
+            <option value="high">Above $5000</option>
+          </select>
+        </div>
+
+        <!-- Message textarea -->
+        <div class="form-row">
+          <label for="message">Your message</label>
+          <textarea name="message" rows="5" required aria-required="true"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-row">
+          <button class="btn-primary" type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div>
+      <p>&copy; <span></span> Dashboard Project — All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
