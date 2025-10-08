@@ -18,10 +18,12 @@
   </header>
 
   <main class="site-main" role="main">
+    <!-- use id for aria-labelledby -->
     <section class="dashboard" aria-labelledby="dashboard-heading">
-      <h1>Dashboard</h1>
+      <h1 id="dashboard-heading">Dashboard</h1>
 
       <div class="articles" role="list">
+        <!-- re-use card -->
         <article class="card" aria-labelledby="article-one-title">
           <h2>Article One</h2>
           <p>Short description of article one. This is a sample summary to show article layout.</p>
@@ -37,6 +39,7 @@
     </section>
   </main>
 
+  <!-- re-use footer as component -->
   <footer class="site-footer" role="contentinfo">
     <div>
       <p>&copy; <span></span> Dashboard Project — All rights reserved.</p>

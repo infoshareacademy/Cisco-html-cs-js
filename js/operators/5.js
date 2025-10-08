@@ -1,11 +1,13 @@
-let a = 'adam';
-let b = 'ewa';
+let a = '5a';
+let b = 6;
 
-console.log('a + b', a + b);
-console.log('b + a', b + a);
-console.log('a - b', a - b);
-console.log('b - a', b - a);
-console.log('a * b', a * b);
-console.log('b * a', b * a);
-console.log('a / b', a / b);
+// console.log('a + b', a + b); // 'adamewa'
+// console.log('b + a', b + a); // 'ewaadam'
+// console.log('a - b', a - b);
+// console.log('b - a', b - a);
+// console.log('a * b', a * b);
+// console.log('b * a', b * a);
+// console.log('a / b', a / b);
 console.log('b / a', b / a);
+
+// console.log('asdasd', 'Dariusz', ' ', '+', ' ', "Anna")

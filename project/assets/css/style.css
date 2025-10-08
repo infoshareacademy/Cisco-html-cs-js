@@ -1,3 +1,4 @@
+/* color tokens */
 :root {
   --color-bg: #fff;
   --color-white: #fff;
@@ -73,6 +74,10 @@ h1 {
 }
 
 .site-main {
+  /* flex 1 -  */
+  /* flex-grow: 1 → the element grows to fill the available space,
+  flex-shrink: 1 → the element can shrink,
+  flex-basis: 0% → the initial size is 0 (which means the space is divided equally between elements). */
   flex: 1;
   display: flex;
   justify-content: center;
@@ -131,21 +136,23 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease;
+  /* transition with hover */
 }
 
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-white);
 }
+.btn-primary:hover {
+  background-color: var(--color-secondary); /* ciemniejszy odcień akcentu */
+}
 
 button:hover,
 button:focus {
   opacity: 0.9;
+  background-color:red;
 }
 
-.btn-primary:hover {
-  background-color: var(--color-secondary); /* ciemniejszy odcień akcentu */
-}
 
 .dashboard {
   max-width: var(--max-width);

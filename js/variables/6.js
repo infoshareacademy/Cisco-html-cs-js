@@ -1,5 +1,9 @@
-console.log(city, age, surname);
+// const city = 'Warszawa';
+// let surname = 'Kowalski'
 
-const city = 'Warszawa';
-var age = 15;
-let surname = 'Kowalski'
+// console.log(city, surname, age);
+
+
+const user = prompt("Podaj Imię");
+
+console.log('Czyli jesteś zalogowany jako: ' + user);
