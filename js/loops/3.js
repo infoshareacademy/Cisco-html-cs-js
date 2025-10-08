@@ -1,0 +1,3 @@
+do {
+  // kod
+} while (warunek);
