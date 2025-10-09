@@ -1,3 +1,6 @@
+let i = 3;
+debugger;
 do {
-  // kod
-} while (warunek);
+  console.log("liczba:", i);
+  i++;
+} while (i < 3);

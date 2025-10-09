@@ -1,9 +1,0 @@
-:root { --gap: 1rem; --text: #222; --bg: #fff; }
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body { color: var(--text); background: #f7f7fb; line-height: 1.5; }
-header { background: var(--bg); padding: 1.25rem; border-bottom: 1px solid #e9e9ef; }
-main { max-width: 900px; margin: 0 auto; padding: 1rem; }
-h1 { margin: 0 0 .5rem; }
-ul { padding-left: 1.25rem; }
-footer { position: relative; bottom: 0; }
