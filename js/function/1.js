@@ -1,6 +1,9 @@
 
-function sum() {
-   // 
+function sum(a, b) {
+   const c = 5;
+   const d = 10;
+
+   return a + b + c + d;
 }
 
 const test1 = sum(1, 2);
